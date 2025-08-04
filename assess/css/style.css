@@ -1,0 +1,75 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+:root{
+    --background-color:#fff;
+    --second-bg-color:#FBFAFF;
+    --heading-color:#080415;
+    --desc-color:#51586A;
+    --decor-color:#5D3BEE;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+}
+input,textarea,select,button{
+    font-size: inherit;
+    font-family: inherit;
+}
+/* Chung */
+.a{
+    text-decoration: none;
+}
+.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.email__wrap{
+    border: 1px solid rgb(93,59,238,0.3);
+    border-radius: 50%;
+}
+.email__icon{
+    padding: 8px;
+}
+.email__name{
+    color: var(--heading-color);
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: 0%;
+    text-decoration-thickness: 10%;
+
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+/* Header */
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    padding:47px 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-list{
+    display: flex;
+    gap: 43px;
+}
+.navbar__link{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #51586A;
+    text-decoration: none;
+}

@@ -56,9 +56,12 @@ input,textarea,select,button{
 .section-heading{
     font-family: DM Sans;
     font-weight: 500;
-    font-size: 8rem;
-    line-height: 76px;
+    font-style: Medium;
+    font-size: 4.2rem;
+    leading-trim: NONE;
+    line-height: 50px;
     letter-spacing: -4%;
+
     color: var(--heading-color);
 }
 .section-desc{
@@ -145,6 +148,13 @@ input,textarea,select,button{
 .hero__content{
    
 }
+.hero__heading{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: -4%;
+}
 .hero__desc{
     margin-top: 20px;
     margin-bottom: 50px;
@@ -179,4 +189,54 @@ input,textarea,select,button{
 }
 .social__item:first-of-type{
     margin-left: 15px;
+}
+/* Company */
+.company{
+    padding-top: 100px;
+}
+.company__heading{
+    width: 350px;
+    position: relative;
+    padding-left: 100px;
+}
+.company__heading::before{
+    content: "";
+    width: 86px;
+    height: 2px;
+    background-color: var(--decor-color);
+    display: inline-block;
+    position: absolute;
+    left: -22px;
+    top: 20px;
+}
+.company__item{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 34px;
+}
+.company__icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.company__icon-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #FBFAFF;
+    border-radius: 50%;
+}
+.company__icon-small{ 
+    width: 20px;
+    height: 24px;
+    border-radius: 0;
+}
+.company__name{
+    color: var(--heading-color);
+    font-weight: 500;
+    word-wrap: nowrap;
 }

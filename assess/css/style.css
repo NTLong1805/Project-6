@@ -243,6 +243,7 @@ input,textarea,select,button{
 /* Service */
 .service{
     padding-top: 133px;
+    padding-bottom: 140px;
 }
 .service__heading{
     text-align: center;
@@ -259,6 +260,7 @@ input,textarea,select,button{
     width: 370px;
     height: 306px;
     margin-top: 60px;
+    margin-left: 30px;
     background-color: var(--second-bg-color);
     padding: 33px 43px;
     transition: 0.5s;
@@ -287,4 +289,64 @@ input,textarea,select,button{
     font-size: 3.2rem;
     font-weight: 500;
     margin-bottom: 15px;
+}
+/* Project */
+.project{
+    padding-top: 86px;
+    padding-bottom: 86px;
+    background-color: var(--decor-color);
+}
+.project__heading{
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 66px;
+    letter-spacing: -4%;
+    width: 468px;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+.project__desc{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    width: 370px;
+    color: #FFFFFF;
+    padding-top: 31px;
+}
+.project__card{
+    background-image: url(/assess/img/BG.png);
+    width: 570px;
+    height: 234px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 23px 23px 34px;
+    margin-bottom: 30px;
+}
+.project__card-heading{
+    font-size: 3.2rem;
+    line-height: 40px;
+    margin-top: 0px;
+}
+.project__card-desc{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+.project__cta{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 30px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color:var(--heading-color);
+}
+.project__btn{
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
 }

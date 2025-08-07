@@ -20,7 +20,7 @@
 }
 
 .col {
-  flex: 1 0;
+  flex: 1 0 auto;
 }
 
 .g-0 {
@@ -88,7 +88,7 @@
 
 .row[class*='row-cols-'] > *,
 .row > [class*='col-'] {
-  flex: 0 0 auto;
+  flex: 0 0 auto  ;
 }
 
 .row[class*='row-cols-'] > * {
@@ -738,7 +738,7 @@
   }
 
   .offset-xxl-7 {
-    --offset-number: 7;
+    --offset-number: 7; 
   }
 
   .offset-xxl-8 {

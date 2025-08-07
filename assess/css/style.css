@@ -79,7 +79,6 @@ input,textarea,select,button{
     font-weight: 700;
     font-style: Bold;
     font-size: 1.8rem;
-    line-height: 1.67;
     color: var(--btn-color);
     text-decoration: none;
 
@@ -520,4 +519,194 @@ input,textarea,select,button{
 .review__decor:nth-of-type(2){
     right: -100px;
     bottom: -100px;
+}
+/* Question */
+.question{
+    padding-top: 95px;
+    padding-bottom: 160px;
+}
+.question__heading{
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.18;
+    max-width: 575px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+.question__label{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -4%;
+    color: var(--heading-color);
+    margin-bottom: 23px;
+    transition: 1s;
+}
+.question__content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-left: 23px;
+    margin-top: 60px;
+    position: relative;
+}
+.question__info{
+    padding-left: 23px;
+}
+.question__answer{
+    width: 487px;
+    margin-bottom: 21px;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: 1s;
+}
+.question__extend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-start;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(22, 26, 28, 0.1);
+    border-radius: 50%;
+    color: #080415;
+    cursor: pointer;
+}
+.question__extend::before{
+    content: "+";
+    font-size: 24px;
+    transition: 2s;
+}
+.question__seperator{
+    height: 2px;
+    opacity: 1;
+    /* width: 1009px; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.question__input{
+    display: none;
+}
+.question__input:checked + .question__info .question__label,
+.question__input:checked ~ .question__extend::before{
+    color: var(--decor-color);
+}
+.question__input:checked ~ .question__extend::before{
+    content: "-";
+}
+.question__input:checked + .question__info .question__answer{
+    opacity: 1;
+    visibility: visible;
+    max-height: 200px;
+}
+.question__input:checked ~ .question__seperator{
+    background-color: var(--decor-color);
+}
+/* Gallery */
+.gallery{
+    padding-bottom: 140px;
+}
+.gallery__heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gallery__desc{
+    margin: 0 auto;
+    width: 528px;
+    text-align: center;
+}
+.gallery__label{
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 40px;
+    letter-spacing: -4%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-align: center;
+    color: var(--decor-color);
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.gallery__img-wrap{
+    justify-self: flex-end;
+}
+/* CTA */
+.book{
+    padding-bottom: 50px;
+}
+.book__inner{
+    background-image: url(/assess/img/cta__bg\ \(2\).png);
+    padding: 68px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 448px;
+    width: 100%;
+    
+}
+.book__decor{
+
+}
+.book__heading{
+    margin-top: 20px;
+}
+.book__desc{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    width: 570px;
+    text-align: center;
+}
+.book__btn{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 30px;
+}
+/* footer */
+.footer{
+    padding-bottom: 30px ;
+}
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__seperator{
+    width: 100%;
+    margin-top: 32px;
+}
+.footer__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 80px;
+}
+.footer__right{
+    display: flex;
+    gap: 23px;
+}
+.footer__content{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: var(--desc-color);
+}
+.footer__right .footer__content:nth-of-type(2){
+    position: relative;
+    padding-left: 8px;
+}
+.footer__right .footer__content:nth-of-type(2)::before{
+    content: "";
+    width: 14px;
+    height: 1px;
+    background-color: #51586A;
+    rotate: 90deg;
+    position: absolute;
+    left: -8px;
+    top: 13px;
 }
